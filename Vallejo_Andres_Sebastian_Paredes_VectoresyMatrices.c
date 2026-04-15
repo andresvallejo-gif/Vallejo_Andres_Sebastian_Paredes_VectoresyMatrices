@@ -72,7 +72,16 @@ int main()
     printf("Reprobados: %d\n", reprobados);
 
  }
- 
+ printf("Promedio de cada estudiante:\n");
+ for (i = 0; i < 5; i++)
+    {
+        printf("Estudiante %d: %.2f\n", i + 1, promedio[i]);
+    }
+    printf("Promedio de cada materia:\n");
+ for (j = 0; j < 3; j++)
+    {
+        printf("Materia %d: %.2f\n", j + 1, promedioM[j]);
+    }
  
  
     return 0;

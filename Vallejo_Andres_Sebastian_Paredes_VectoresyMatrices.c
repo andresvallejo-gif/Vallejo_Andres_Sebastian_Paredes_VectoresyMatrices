@@ -30,6 +30,15 @@ int main()
     }
     promedio[i] = suma / 3;
  }
+ for ( j = 0; j < 3; j++)
+ {
+    suma = 0;
+    for (i = 0; i < 5; i++)
+    {
+        suma += notas[i][j];
+    }
+    promedioM[j] = suma / 5;
+ }
  
  
     return 0;

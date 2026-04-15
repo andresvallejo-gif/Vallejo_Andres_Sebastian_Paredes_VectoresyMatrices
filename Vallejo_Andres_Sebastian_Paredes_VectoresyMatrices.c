@@ -39,6 +39,40 @@ int main()
     }
     promedioM[j] = suma / 5;
  }
+ for (j = 0; j < 3; j++)
+ {
+    float max = notas[0][j];
+    float menor = notas[0][j];
+    int aprobados = 0;
+    int reprobados = 0;
+    for (i = 0; i < 5; i++)
+    {
+        if (notas[i][j] > max)
+        {
+            max = notas[i][j];
+        }
+        if (notas[i][j] < menor)
+        {
+            menor = notas[i][j];
+        }
+        if (notas[i][j] >= 6)
+        {
+            aprobados++;
+        }
+        else
+        {
+            reprobados++;
+        }
+    }
+    printf("Materia %d:\n", j + 1);
+    printf("Nota max: %.2f\n", max);
+    printf("Nota menor: %.2f\n", menor);
+    printf("Promedio: %.2f\n", promedioM[j]);
+    printf("Aprobados: %d\n", aprobados);
+    printf("Reprobados: %d\n", reprobados);
+
+ }
+ 
  
  
     return 0;

@@ -11,8 +11,14 @@ int main()
  {
     for (j = 0; j < 3; j++)
     {
-       printf("Ingrese la nota %d del estudiante %d: ", j + 1, i + 1);
-       scanf("%f", &notas[i][j]);
+        do
+        {
+         coprintf("Ingrese la nota %d del estudiante %d(de 0 a 10): ", j + 1, i + 1);
+         scanf("%f", &notas[i][j]);
+        } while (notas[i][j] < 0 || notas[i][j] > 10);
+        
+        
+      
     }
  }
  
